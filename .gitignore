@@ -7,6 +7,8 @@ yarn.lock
 dist/
 build/
 out/
+_site/
+.jekyll-cache/
 
 # IDE and editor files
 .vscode/
