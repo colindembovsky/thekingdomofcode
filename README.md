@@ -4,9 +4,7 @@ Welcome to the Kingdom of Code website repository! This is a static website buil
 
 ## Tech Stack
 
-- HTML
-- CSS
-- JavaScript
+- Jekyll
 - Tailwind CSS
 
 ## Getting Started
