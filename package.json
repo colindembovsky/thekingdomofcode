@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Kingdom of Code community website",
   "scripts": {
-    "serve": "live-server src",
-    "build": "cp -r src/* dist/ && tailwindcss -i ./styles/input.css -o ./dist/styles/main.css",
-    "watch": "tailwindcss -i ./styles/input.css -o ./src/styles/main.css --watch"
+    "serve": "bundle exec jekyll serve",
+    "build": "bundle exec jekyll build && tailwindcss -i ./styles/input.css -o ./assets/css/main.css",
+    "watch": "concurrently \"bundle exec jekyll serve --livereload\" \"tailwindcss -i ./styles/input.css -o ./assets/css/main.css --watch\""
   },
   "devDependencies": {
     "live-server": "^1.2.2",
+    "concurrently": "^8.0.1",
     "tailwindcss": "^3.3.3"
   }
 }
