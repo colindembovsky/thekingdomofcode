@@ -1,0 +1,14 @@
+{
+  "name": "kingdom-of-code-website",
+  "version": "1.0.0",
+  "description": "Kingdom of Code community website",
+  "scripts": {
+    "serve": "live-server src",
+    "build": "cp -r src/* dist/ && tailwindcss -i ./styles/input.css -o ./dist/styles/main.css",
+    "watch": "tailwindcss -i ./styles/input.css -o ./src/styles/main.css --watch"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "tailwindcss": "^3.3.3"
+  }
+}
