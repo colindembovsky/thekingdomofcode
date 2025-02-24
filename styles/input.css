@@ -78,3 +78,37 @@ footer {
     padding: 1rem;
     margin-top: auto;
 }
+
+/* Side Menu Styles */
+#menu-btn {
+    transition: transform 0.3s ease;
+}
+
+#menu-btn:hover {
+    transform: scale(1.1);
+}
+
+#nav-menu {
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#nav-menu.open {
+    transform: translateX(0);
+}
+
+/* Animation for menu overlay */
+#menu-overlay {
+    transition: opacity 0.3s ease;
+}
+
+#menu-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Reset any conflicting transform styles */
+.transform-none {
+    transform: none !important;
+}

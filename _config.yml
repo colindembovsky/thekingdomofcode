@@ -1,7 +1,7 @@
-title: Kingdom of Code
-description: Kingdom of Code community website
+title: The Kingdom of Code
+description: Kingdom of Code website
 baseurl: ""
-url: ""
+url: "https://thekingdomofcode.com"
 
 # Build settings
 markdown: kramdown
