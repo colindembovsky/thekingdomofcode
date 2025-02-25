@@ -112,3 +112,33 @@ footer {
 .transform-none {
     transform: none !important;
 }
+
+/* Post Page Styles */
+.post-page {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.post-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* changed from 0.9 to 0.3 to allow 70% of the background image to show through */
+    z-index: 0;
+}
+
+.post-container {
+    position: relative;
+    z-index: 1;
+}
+
+.post-title {
+    color: #6366F1 !important;
+}

@@ -1,0 +1,44 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="container mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-8 text-indigo-400 font-heading">Blog Posts</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for post in site.posts %}
+        <article class="bg-gray-900/90 rounded-lg shadow-lg overflow-hidden backdrop-blur">
+            <div class="p-6">
+                <h2 class="text-xl font-bold mb-2 text-indigo-400 font-heading">
+                    <a href="{{ post.url | relative_url }}" class="hover:text-indigo-300 transition-colors">
+                        {{ post.title }}
+                    </a>
+                </h2>
+                <div class="text-gray-400 text-sm mb-4">
+                    {{ post.date | date: "%B %d, %Y" }}
+                </div>
+                {% if post.tags %}
+                <div class="flex flex-wrap gap-2 mb-4">
+                    {% for tag in post.tags %}
+                    <span class="inline-flex items-center text-xs px-3 py-1 bg-indigo-900/80 text-indigo-200 rounded-full hover:bg-indigo-800/80 transition-colors backdrop-blur">
+                        {{ tag }}
+                    </span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% if post.excerpt %}
+                <div class="text-gray-300 mb-4">
+                    {{ post.excerpt | strip_html | truncatewords: 30 }}
+                </div>
+                {% endif %}
+                {% if post.categories %}
+                <div class="text-sm text-gray-400">
+                    Filed under: {{ post.categories | join: ", " }}
+                </div>
+                {% endif %}
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>
