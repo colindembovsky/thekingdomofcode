@@ -19,6 +19,11 @@ layout: default
                         {% endfor %}
                     </div>
                     {% endif %}
+                    {% if page.summary %}
+                    <div class="text-gray-300 italic mb-6">
+                        {{ page.summary }}
+                    </div>
+                    {% endif %}
                 </header>
                 
                 <div class="font-sans">
