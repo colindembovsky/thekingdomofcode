@@ -269,3 +269,8 @@ footer {
 .prose blockquote p::after {
     content: none;
 }
+
+/* Text justification for paragraphs */
+.prose p {
+    text-align: justify;
+}

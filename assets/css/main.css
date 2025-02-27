@@ -1559,6 +1559,11 @@ video {
   font-style: italic;
 }
 
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
@@ -1902,6 +1907,12 @@ footer {
   content: none;
 }
 
+/* Text justification for paragraphs */
+
+.prose p {
+  text-align: justify;
+}
+
 @media (min-width: 1024px) {
   .lg\:prose-xl {
     font-size: 1.25rem;
@@ -2163,6 +2174,11 @@ footer {
 
 .hover\:bg-indigo-800\/80:hover {
   background-color: rgb(55 48 163 / 0.8);
+}
+
+.hover\:text-blue-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-gray-300:hover {
