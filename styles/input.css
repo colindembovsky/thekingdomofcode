@@ -157,3 +157,30 @@ footer {
 .post-title {
     color: #6366F1 !important;
 }
+
+/* Timeline styles */
+.shadow-glow {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+}
+
+@media (max-width: 768px) {
+    /* Stack timeline items vertically on mobile */
+    .mr-[50%], .ml-[50%] {
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Adjust timeline line for mobile */
+    .relative > .absolute.left-1/2 {
+        left: 0 !important;
+        transform: none !important;
+    }
+
+    /* Adjust timeline dots for mobile */
+    article > .absolute.left-1/2 {
+        left: 0 !important;
+        transform: none !important;
+    }
+}
