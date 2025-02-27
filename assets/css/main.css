@@ -1269,6 +1269,10 @@ video {
   height: 1.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1494,6 +1498,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1838,6 +1846,21 @@ footer {
 .prose.space-y-8 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* Blockquote styling */
+
+.prose blockquote {
+  font-style: italic;
+  border-left: 4px solid #6366F1;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #e2e8f0;
+}
+
+.prose blockquote p::before,
+.prose blockquote p::after {
+  content: none;
 }
 
 @media (min-width: 1024px) {

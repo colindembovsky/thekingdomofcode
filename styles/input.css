@@ -215,3 +215,17 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+/* Blockquote styling */
+.prose blockquote {
+    font-style: italic;
+    border-left: 4px solid #6366F1;
+    padding-left: 1rem;
+    margin-left: 0;
+    color: #e2e8f0;
+}
+
+.prose blockquote p::before,
+.prose blockquote p::after {
+    content: none;
+}
