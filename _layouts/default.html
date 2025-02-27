@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body class="min-h-screen bg-black text-white relative overflow-x-hidden">
+    <div class="flex justify-center">
+        <img src="{{ '/assets/img/TheKingdomOfCodeLogo.png' | relative_url }}" alt="Kingdom of Code Logo" class="kingdom-logo">
+    </div>
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
