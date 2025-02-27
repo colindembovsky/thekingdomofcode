@@ -1269,10 +1269,6 @@ video {
   height: 1.5rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .h-full {
   height: 100%;
 }
@@ -1736,6 +1732,19 @@ footer {
   transform: translateX(0) !important;
 }
 
+/* Side nav logo size */
+
+.nav-logo {
+  height: 8rem;
+  width: auto;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+  transition: filter 0.3s ease;
+}
+
+.nav-logo:hover {
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+}
+
 /* Animation for menu overlay */
 
 #menu-overlay {
@@ -1817,6 +1826,12 @@ footer {
   margin-bottom: 0.5rem;
   /* Further reduced from 1rem */
   position: relative;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+  transition: filter 0.3s ease;
+}
+
+.kingdom-logo:hover {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
 }
 
 .kingdom-logo::after {
