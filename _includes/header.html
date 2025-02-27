@@ -9,7 +9,9 @@
 <div id="nav-menu" class="fixed top-0 left-0 h-full w-64 bg-gray-800 z-40" style="transform: translateX(-100%);">
     <div class="h-full flex flex-col justify-between p-8">
         <div class="mt-16 overflow-y-auto">
-            <a href="{{ '/' | relative_url }}" class="text-xl font-bold mb-8 block">{{ site.title }}</a>
+            <a href="{{ '/' | relative_url }}" class="block mb-8">
+                <img src="{{ '/assets/img/TheKingdomOfCodeLogo.png' | relative_url }}" alt="{{ site.title }}" class="h-8">
+            </a>
             <nav class="flex flex-col space-y-4">
                 <a href="{{ '/' | relative_url }}" class="text-white hover:text-gray-300 transition-colors">Home</a>
                 <a href="{{ '/about' | relative_url }}" class="text-white hover:text-gray-300 transition-colors">About</a>
