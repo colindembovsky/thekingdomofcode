@@ -7,6 +7,15 @@ title: Home
     <div class="text-center px-6">
         <h1 class="text-6xl font-bold mb-4">The Kingdom of Code</h1>
         <p class="text-2xl mb-8">Exploring the Intersection of Faith and Technology</p>
-        <a href="{{ '/about' | relative_url }}" class="learn-more-btn mb-8 inline-block">About</a>
+        
+        {% assign latest_post = site.posts.first %}
+        {% if latest_post %}
+        <div class="max-w-2xl mx-auto bg-gray-900/80 backdrop-blur-sm p-6 rounded-lg border border-white/10">
+            <h2 class="text-xl font-bold mb-2 text-indigo-400">Featured Post</h2>
+            <h3 class="text-2xl font-bold mb-4">{{ latest_post.title }}</h3>
+            <p class="mb-4 text-gray-300">{{ latest_post.summary }}</p>
+            <a href="{{ latest_post.url | relative_url }}" class="learn-more-btn inline-block">Read More</a>
+        </div>
+        {% endif %}
     </div>
 </div>
