@@ -4,33 +4,38 @@ title: Blog
 ---
 
 <div class="post-page" style="background-image: url(&quot;{{ '/assets/img/bg.png' | relative_url }}&quot;)">
-    <!-- Black box for header -->
+    <!-- Header -->
     <div class="w-full pt-32">
-        <div class="max-w-2xl mx-auto bg-black/80 backdrop-blur py-8">
+        <div class="max-w-2xl mx-auto bg-black/30 backdrop-blur-sm border border-white/10 py-8 rounded-lg">
             <h1 class="text-4xl font-bold text-indigo-400 font-heading text-center">Blog Posts</h1>
         </div>
     </div>
     
-    <div class="container mx-auto px-4 mt-12">
-        <div class="relative max-w-4xl mx-auto">
-            <!-- Timeline line -->
-            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-indigo-900/50"></div>
-            
-            {% for post in site.posts %}
-            <article class="relative mb-12">
-                <!-- Timeline dot -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -mt-2 w-4 h-4 bg-indigo-400 rounded-full shadow-glow"></div>
-                
-                <!-- Post card - alternating sides -->
-                <div class="bg-gray-900/90 rounded-lg shadow-lg overflow-hidden backdrop-blur p-6 {% cycle 'mr-[50%] pr-12', 'ml-[50%] pl-12' %}">
+    <div class="container mx-auto px-4 mt-12 mb-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {% for post in site.posts %}
+                <article class="bg-gray-900/90 rounded-lg shadow-lg overflow-hidden backdrop-blur p-6 h-full">
                     <h2 class="text-xl font-bold mb-2 text-indigo-400 font-heading">
                         <a href="{{ post.url | relative_url }}" class="hover:text-indigo-300 transition-colors">
                             {{ post.title }}
                         </a>
                     </h2>
-                    <div class="text-gray-400 text-sm mb-4">
-                        {{ post.date | date: "%B %d, %Y" }}
+                    <div class="flex flex-wrap gap-x-4 text-sm mb-4">
+                        <div class="text-gray-400">
+                            {{ post.date | date: "%B %d, %Y" }}
+                        </div>
+                        {% if post.categories %}
+                        <div class="text-gray-400">
+                            Category: {{ post.categories | join: ", " }}
+                        </div>
+                        {% endif %}
                     </div>
+                    {% if post.summary %}
+                    <div class="text-gray-300 mb-4 italic">
+                        {{ post.summary }}
+                    </div>
+                    {% endif %}
                     {% if post.tags %}
                     <div class="flex flex-wrap gap-2 mb-4">
                         {% for tag in post.tags %}
@@ -45,14 +50,9 @@ title: Blog
                         {{ post.excerpt | strip_html | truncatewords: 30 }}
                     </div>
                     {% endif %}
-                    {% if post.categories %}
-                    <div class="text-sm text-gray-400">
-                        Filed under: {{ post.categories | join: ", " }}
-                    </div>
-                    {% endif %}
-                </div>
-            </article>
-            {% endfor %}
+                </article>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
