@@ -37,6 +37,18 @@
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 }
 
+/* About page content block */
+.about-content-block {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 body {
     color: white;
     min-height: 100vh;
