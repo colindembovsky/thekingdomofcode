@@ -5,13 +5,13 @@ title: Home
 {% include video-bg.html %}
 <div class="content">
     <div class="text-center px-6">
-        <h1 class="text-6xl font-bold mb-4">The Kingdom of Code</h1>
+        <h1 class="text-6xl font-bold mb-4 glow-heading">The Kingdom of Code</h1>
         <p class="text-2xl mb-8">Exploring the Intersection of Faith and Technology</p>
         
         {% assign latest_post = site.posts.first %}
         {% if latest_post %}
         <div id="featured-post" class="max-w-2xl mx-auto bg-gray-900/80 backdrop-blur-sm p-6 rounded-lg border border-white/10 mb-8">
-            <h1 class="text-4xl font-bold mb-2 text-indigo-400">
+            <h1 class="text-4xl font-bold mb-2 text-indigo-400 glow-heading">
                 <a href="#featured-post" class="hover:opacity-80">Featured Post</a>
             </h1>
             <h3 class="text-xl font-bold mb-4">{{ latest_post.title }}</h3>
@@ -21,7 +21,7 @@ title: Home
         {% endif %}
 
         <div id="podcast" class="max-w-2xl mx-auto bg-gray-900/80 backdrop-blur-sm p-6 rounded-lg border border-white/10">
-            <h1 class="text-4xl font-bold mb-2 text-indigo-400">
+            <h1 class="text-4xl font-bold mb-2 text-indigo-400 glow-heading">
                 <a href="#podcast" class="hover:opacity-80">The Kingdom of Code Podcast</a>
             </h1>
             <h2 class="text-4xl font-bold mb-2 coming-soon">Coming soon!</h2>
