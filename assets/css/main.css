@@ -1237,6 +1237,10 @@ video {
   margin-top: 4rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -1494,10 +1498,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .text-center {
@@ -1924,6 +1924,40 @@ footer {
 
 .prose p {
   text-align: justify;
+}
+
+/* Audio Player Styles */
+
+.custom-audio-player {
+  background-color: rgba(99, 102, 241, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
+}
+
+.custom-audio-player::-webkit-media-controls-panel {
+  background-color: rgba(17, 24, 39, 0.8);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.custom-audio-player::-webkit-media-controls-current-time-display,
+.custom-audio-player::-webkit-media-controls-time-remaining-display {
+  color: white;
+}
+
+.custom-audio-player::-webkit-media-controls-play-button,
+.custom-audio-player::-webkit-media-controls-volume-slider,
+.custom-audio-player::-webkit-media-controls-timeline {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.audio-player-container {
+  transition: transform 0.3s ease;
+}
+
+.audio-player-container:hover {
+  transform: scale(1.02);
 }
 
 @media (min-width: 1024px) {
