@@ -10,16 +10,20 @@ title: Home
         
         {% assign latest_post = site.posts.first %}
         {% if latest_post %}
-        <div class="max-w-2xl mx-auto bg-gray-900/80 backdrop-blur-sm p-6 rounded-lg border border-white/10 mb-8">
-            <h1 class="text-4xl font-bold mb-2 text-indigo-400">Featured Post</h1>
+        <div id="featured-post" class="max-w-2xl mx-auto bg-gray-900/80 backdrop-blur-sm p-6 rounded-lg border border-white/10 mb-8">
+            <h1 class="text-4xl font-bold mb-2 text-indigo-400">
+                <a href="#featured-post" class="hover:opacity-80">Featured Post</a>
+            </h1>
             <h3 class="text-xl font-bold mb-4">{{ latest_post.title }}</h3>
             <p class="mb-4 text-gray-300">{{ latest_post.summary }}</p>
             <a href="{{ latest_post.url | relative_url }}" class="learn-more-btn inline-block">Read More</a>
         </div>
         {% endif %}
 
-        <div class="max-w-2xl mx-auto bg-gray-900/80 backdrop-blur-sm p-6 rounded-lg border border-white/10">
-            <h1 class="text-4xl font-bold mb-2 text-indigo-400">The Kingdom of Code Podcast</h1>
+        <div id="podcast" class="max-w-2xl mx-auto bg-gray-900/80 backdrop-blur-sm p-6 rounded-lg border border-white/10">
+            <h1 class="text-4xl font-bold mb-2 text-indigo-400">
+                <a href="#podcast" class="hover:opacity-80">The Kingdom of Code Podcast</a>
+            </h1>
             <h2 class="text-4xl font-bold mb-2 coming-soon">Coming soon!</h2>
             <p class="mb-4 text-gray-300">This podcast is at the intersection of Faith and Technology: understanding the role of technology in God’s plan, staying Spirit-led in a rapidly changing world, and using our gifts to shape the future rather than fear it. From coding to creativity, ethics to entrepreneurship, and from the digital to the spiritual, we’ll uncover how believers can lead in the age of technology.</p>
             <p>Listen to the teaser for Episode 1: The Church, AI and the Race to Lead with special guest Rebekah Kuenstler.</p>
