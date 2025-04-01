@@ -6,8 +6,29 @@ title: Podcast
 <div class="content">
     <div class="text-center px-6">
         <img src="/assets/img/Podcast-artwork-small.jpg" alt="The Kingdom of Code Podcast" class="podcast-artwork mx-auto mb-6 rounded-lg">
-        <h2 class="text-4xl font-bold mb-4 coming-soon">Coming soon!</h2>
         <p class="mb-8 text-gray-300 max-w-2xl mx-auto">This podcast is at the intersection of Faith and Technology: understanding the role of technology in God's plan, staying Spirit-led in a rapidly changing world, and using our gifts to shape the future rather than fear it. From coding to creativity, ethics to entrepreneurship, and from the digital to the spiritual, we'll uncover how believers can lead in the age of technology.</p>
+        
+        <h2 class="text-3xl font-bold mb-6">Listen on popular platforms</h2>
+        <div class="platform-links">
+            <!-- Apple Podcasts -->
+            <a href="https://podcasts.apple.com/us/podcast/the-kingdom-of-code/id1805936386" class="platform-link" target="_blank" rel="noopener noreferrer" title="Listen on Apple Podcasts">
+                <img src="/assets/img/apple-podcasts.svg" alt="Apple Podcasts" class="platform-icon">
+            </a>
+            <!-- Spotify -->
+            <a href="#" class="platform-link" target="_blank" rel="noopener noreferrer" title="Listen on Spotify">
+                <img src="/assets/img/spotify.svg" alt="Spotify" class="platform-icon">
+            </a>
+            <!-- Amazon/Audible -->
+            <a href="https://music.amazon.com/podcasts/ed792133-54cc-47ef-86d5-5a572f5899a1" class="platform-link" target="_blank" rel="noopener noreferrer" title="Listen on Amazon/Audible">
+                <img src="/assets/img/audible.svg" alt="Amazon/Audible" class="platform-icon">
+            </a>
+            <!-- PodBean -->
+            <a href="#" class="platform-link" target="_blank" rel="noopener noreferrer" title="Listen on PodBean">
+                <img src="/assets/img/podbean.png" alt="PodBean Podcasts" class="platform-icon">
+            </a>
+        </div>
+
+        <h2 class="text-3xl font-bold mt-12 mb-8">Teasers</h2>
         
         {% for episode in site.data.podcast-episodes reversed %}
         <div class="max-w-2xl mx-auto bg-gray-900/80 backdrop-blur-sm p-6 rounded-lg border border-white/10 mb-6">
