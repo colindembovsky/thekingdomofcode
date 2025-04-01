@@ -1,6 +1,14 @@
 - number: 1
   title: "The Church, AI and the Race to Lead"
   guest: "Rebekah Kuenstler"
-  description: "Listen to the teaser for Episode 1: The Church, AI and the Race to Lead."
+  description: "The world is moving at the speed of light with AI, but is the Church still stuck in the horse and buggy era? In this episode, we challenge the fear surrounding AI and explore how believers can embrace technology, lead innovation, and use it for Kingdom impact. I am joined by special guest Rebekah Kuenstler - join us as we approach tech with faith."
   audio: "/assets/audio/E01-teaser.mp3"
-  status: "teaser"
+- number: 2
+  title: "The Origin of Worth: AI, Identity and the Church's Voice"
+  description: "As AI accelerates and reshapes how we work, the question of human worth becomes more urgent than ever. In this episode, we reflect on a thought-provoking clip from Anthropic CEO Dario Amodei, who admits he has no clear answers to what gives humans value in an age of intelligent machines. From this launching point, we explore timeless truths rooted in Scripture—from Psalm 139 to 1 Corinthians 12—and draw surprising parallels to the Protestant Reformation. The Church has a vital role in helping people rediscover that our value isn't based on productivity or success, but in being fearfully and wonderfully made. It's time to break down the false divide between the sacred and the secular—and step boldly into every realm of society, including tech."
+  audio: "/assets/audio/E02-teaser.mp3"
+- number: 3
+  title: "The First Spirit-Filled Creative: What Bezalel Tells Us About Innovation"
+  guest: "Jon Daniels"
+  description: "Bezalel was the first person God filled with His Spirit — not a priest, not a prophet, but a creative builder. In this episode, John Daniels joins us to explore how Christians are called to innovate and lead in technology, AI, and business. It's time to break down the sacred-secular divide and embrace our role as Spirit-filled creators in every area of life."
+  audio: "/assets/audio/E03-teaser.mp3"

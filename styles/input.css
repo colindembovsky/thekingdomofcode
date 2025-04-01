@@ -339,3 +339,8 @@ footer {
 .podcast-artwork:hover {
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
 }
+
+/* Podcast episode styles */
+.episode-description {
+    text-align: justify;
+}

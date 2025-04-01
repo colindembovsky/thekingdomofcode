@@ -1237,14 +1237,6 @@ video {
   margin-top: 4rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .block {
   display: block;
 }
@@ -1986,6 +1978,12 @@ footer {
 
 .podcast-artwork:hover {
   filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
+}
+
+/* Podcast episode styles */
+
+.episode-description {
+  text-align: justify;
 }
 
 @media (min-width: 1024px) {
